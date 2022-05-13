@@ -1,0 +1,113 @@
+<!--
+
+  @Author: José Antonio Torres Galván
+  @Date: 05/04/2022
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" class="bg-transparent">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberscope</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3737/3737173.png">
+    
+    
+    <!--CSS y Bootstrap-->
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../main.css">
+
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;1,200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <!--HEADER-->
+    <header>
+      
+      <div id="classFirstHeader">
+        <ul class="listaNav">
+          <li><img src="../resources/logo.PNG" alt="logo" id="imgLogo"></li>
+          <li><a href="../index.html"><h1>Cyberscope</h1></a></li>
+          <li>
+            <a href="../pages/carrito.html">
+              <img src="https://cdn-icons-png.flaticon.com/512/3737/3737173.png" alt="imgCarrito" id="imgCarrito">
+            </a>
+          </li>
+        </ul>
+        <hr>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../pages/catalogo.html"><h2>Catalogo</h2></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pages/tienda.html"><h2>Tienda</h2></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pages/contacto.html"><h2>Contacto</h2></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    </header>
+    
+    <!--MAIN-->
+    <div class="bg-dark bg-gradient">
+      <!--Sección de preferencias-->
+      <div class="divPreferencias border border-dark m-1 bg-secondary text-white bg-gradient">
+        
+        <form action="" method="" enctype="">
+          <h2>Ordenar</h2>
+          <div class="formPreferencias">
+            <input type="checkbox" name="ckbPrecio" value="1"/>
+            <label for="ckbPrecio">Precio</label>
+          </div>
+          <div class="formPreferencias">
+            <input type="checkbox" name="ckbRelevancia" value="1"/>
+            <label for="ckbRelevancia">Relevancia</label>
+          </div>
+          <div class="formPreferencias">
+            <input type="checkbox" name="ckbCalificacion" value="1"/>
+            <label for="ckbCalificacion">Calificacion</label>
+          </div>
+        </form>
+        
+      </div>
+
+      <!--Sección de productos-->
+      <div>
+        <div>
+          <h2>Producto</h2>
+        </div>
+        <div>
+          <img src="" alt=""> <!--Se coloca vacio porque mi plan es que venga de una BD en algún futuro-->
+        </div>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <div id="footer">
+      
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="imgFb" class="imgFooter">
+      <p>Copyright</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png" alt="imgIg" class="imgFooter">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
+  </body>
+</html>
