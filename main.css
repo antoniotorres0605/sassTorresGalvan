@@ -114,19 +114,18 @@ li{
   margin: 0;
   padding: 4rem 3rem 10rem 1rem;
   display: inline-block;
-  background-color: white;
-  color: black;
+  color: white;
   font-weight: bold;
   justify-content: left;
 }
 
 
 .divPreferencias label{
-  display: inline;
+  display: block;
 }
 
 .divPreferencias input{
-  display: inline;
+  display: block;
 }
 
 .imgGeneral{

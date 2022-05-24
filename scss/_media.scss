@@ -1,0 +1,25 @@
+@media screen and (min-width: 800px){
+  
+  .mainSection{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 3vh;
+  }
+  
+}
+@media screen and (min-width: 400px){
+  #imgLogo{
+    display: block;
+  }  
+
+  
+}
+
+@media screen and (min-width: 540px){
+  #imgLogo{
+    display: block;
+  } 
+  #imgCarrito{
+    display: block;
+  } 
+}
