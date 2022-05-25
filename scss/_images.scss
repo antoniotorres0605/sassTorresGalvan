@@ -4,21 +4,21 @@
 }
 
 .imgFooter{
-  max-width: 100%;
+  @extend .imgGeneral;
   max-height: 40px;
 }
 
 #imgLogo{
+  @extend .imgGeneral;
   max-width: 140px;
-  max-height: 140px;
   margin: 0;
   padding: 0;
   display: none;
 }
 
 #imgBanner{
+  @extend .imgGeneral;
   max-height: 30%;
-  max-width: 100%;
   border: solid 1vh;
   border-color: rgb(44, 44, 136);
 }

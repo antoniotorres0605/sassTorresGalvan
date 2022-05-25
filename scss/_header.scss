@@ -1,12 +1,12 @@
 /*HTML*/
 html{
-  background-image: url("https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVyYWwlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: wheat;
-    display: grid;
-    grid-template-areas: 
+  background-image: map-get($fondoPantalla, image );
+  background-repeat: map-get($fondoPantalla, repetir );
+  background-size: map-get($fondoPantalla, size );
+  background-attachment: map-get($fondoPantalla, attachment );
+  color: wheat;
+  display: grid;
+  grid-template-areas: 
     "header"
     "main main"
     "footer footer"
@@ -30,13 +30,12 @@ header {
   animation-duration: 1.5s;
 }
 
+// Variables
 @keyframes entrada {
-  from {
-    background-color: rgb(255, 255, 255);
-  }
-
-  to {
-    background-color: rgb(33, 37, 41);
+  @each $funcionalidad,$color in $colores {
+    #{$funcionalidad}{
+      background-color: $color;
+    }
   }
 }
 

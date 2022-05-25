@@ -11,7 +11,7 @@
   margin: 0;
   padding: 4rem 3rem 10rem 1rem;
   display: inline-block;
-  color: white;
+  color: $colorSecundario;
   font-weight: bold;
   justify-content: left;
 
@@ -29,13 +29,16 @@ input {
   display: block;
 }
 
+@mixin bordes($borde,$size,$fondo) {
+  border: $borde $size;
+  border-color: $fondo;
+}
+
 .mainContactanos {
   height: 1000px;
-  color: white;
+  color: $colorSecundario;
   font-weight: bolder;
-
-  /*margin: 115px;
-  padding: 75px;*/
+  @include bordes(solid,100px,rgb(33, 37, 41));
   border: solid 100px;
   border-color: rgb(33, 37, 41);
   background-color: rgb(105, 105, 134);
@@ -45,7 +48,7 @@ input {
 
 a {
   text-decoration: none;
-  color: white;
+  color: $colorSecundario;
   margin: 0;
   padding: 0;
 
